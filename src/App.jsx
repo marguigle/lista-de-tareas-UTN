@@ -30,7 +30,7 @@ function App() {
     setTasks([...tasks, newItem]);
   };
   return (
-    <div className="container">
+    <div className="containerApp">
       <h1>Lista de tareas</h1>
       <TaskForm addTask={addTask} />
       <TaskList

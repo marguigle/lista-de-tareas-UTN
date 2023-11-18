@@ -1,24 +1,33 @@
 .inputCheck {
-  width: 2rem;
+  transform: scale(1.5);
+  margin-left: 4rem;
+}
+.inputCheck:hover {
+  transform: scale(1.7);
 }
 button {
   height: 1rem;
+  font-size: 1.6rem;
   border-radius: 5px;
-  margin: 2rem 1rem;
+  margin-left: 2rem;
   padding: 0.5rem;
+  border: none;
+}
+button:hover {
+  font-size: 2rem;
+  background-color: red;
+  box-shadow: 5x 5px 5px red;
 }
 .containerItem {
   display: flex;
   background-color: coral;
   box-shadow: 10px 10px 10px black;
-  min-width: 40vw;
+  min-width: 50vw;
 
   border-radius: 5px;
-  margin: 2px;
+  margin: 1rem;
 }
-.containerTarea {
-  width: 90%;
-  display: flex;
-  text-align: center;
-  align-items: center;
+.containerItem:hover {
+  transform: scale(1.02);
+  background-color: red;
 }

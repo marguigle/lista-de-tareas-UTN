@@ -4,18 +4,23 @@ const TaskItem = ({ tarea, onCompleted, onDeleteItem }) => {
   const getStyle = () => {
     return {
       textDecoration: tarea.completed ? "line-through" : "none",
+      fontSize: "1.5rem",
+      display: "flex",
+      alignItems: "center",
+      paddingLeft: "2rem",
+      marginRight: "2rem",
     };
   };
 
   return (
     <div style={getStyle()} className="containerItem">
+      {tarea.task}
       <input
         className="inputCheck"
         type="checkbox"
         checked={tarea.Completed}
         onChange={() => onCompleted(tarea.id)}
       />
-      {tarea.task}
 
       <button onClick={() => onDeleteItem(tarea.id)}>
         {
