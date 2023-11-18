@@ -3,6 +3,7 @@ import data from "./data.json";
 import "./App.css";
 import TaskList from "./components/TaskList.jsx";
 import TaskForm from "./components/TaskForm";
+
 function App() {
   const [tasks, setTasks] = useState(data);
   console.log(data);

@@ -1,8 +1,8 @@
 import TaskItem from "./TaskItem.jsx";
-
+import "../styles/taskList.css";
 const TaskList = ({ tasks, onCompleted, onDeleteItem }) => {
   return (
-    <div>
+    <div className="containerList">
       {tasks.map((tarea, index) => (
         <TaskItem
           key={index}

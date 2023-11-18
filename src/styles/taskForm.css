@@ -1,0 +1,14 @@
+.inputForm {
+  background-color: rgb(173, 173, 173);
+  height: 2.5rem;
+  width: 40vw;
+  color: white;
+  padding-left: 0.8rem;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+button {
+  font-size: 1.6rem;
+  height: 3rem;
+  background-color: coral;
+}
