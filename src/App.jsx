@@ -1,23 +1,19 @@
 import { useState } from "react";
-import data from "./data.json";
 import "./App.css";
 import TaskList from "./components/TaskList.jsx";
 import TaskForm from "./components/TaskForm";
 
 function App() {
-  const [tasks, setTasks] = useState(data);
-  console.log(data);
+  const [tasks, setTasks] = useState([]);
 
   const onCompleted = (id) => {
-    if (data !== null) {
-      setTasks(
-        tasks.map((tarea) =>
-          tarea.id === Number(id)
-            ? { ...tarea, completed: !tarea.completed }
-            : { ...tarea }
-        )
-      );
-    }
+    setTasks(
+      tasks.map((tarea) =>
+        tarea.id === Number(id)
+          ? { ...tarea, completed: !tarea.completed }
+          : { ...tarea }
+      )
+    );
   };
 
   const onDeleteItem = (id) => {

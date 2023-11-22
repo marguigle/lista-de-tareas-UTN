@@ -20,6 +20,8 @@ button:hover {
 }
 .containerItem {
   display: flex;
+  align-items: center;
+
   background-color: coral;
   box-shadow: 10px 10px 10px black;
   min-width: 50vw;
@@ -30,4 +32,25 @@ button:hover {
 .containerItem:hover {
   transform: scale(1.02);
   background-color: red;
+}
+
+@media screen and (max-width: 320px) {
+  .containerItem {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 376px) {
+  .containerItem {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 426px) {
+  .containerItem {
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 769px) {
+  .containerItem {
+    width: 80vw;
+  }
 }

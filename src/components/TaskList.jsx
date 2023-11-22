@@ -1,6 +1,10 @@
 import TaskItem from "./TaskItem.jsx";
 import "../styles/taskList.css";
 const TaskList = ({ tasks, onCompleted, onDeleteItem }) => {
+  if (tasks.length === 0) {
+    return null;
+  }
+
   return (
     <div className="containerList">
       {tasks.map((tarea, index) => (
