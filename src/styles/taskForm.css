@@ -50,13 +50,47 @@ button {
 }
 
 @media screen and (max-width: 376px) {
-  .containerItem {
-    width: 90vw;
+  .formContainer {
+    width: 97vw;
+    /* margin-bottom: 10vh; */
+    box-shadow: 10px 10px 10px black;
+  }
+  .inputForm {
+    background-color: rgb(173, 173, 173);
+    height: 2rem;
+    width: 70vw;
+    color: white;
+    padding-left: 0.8rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px black;
+  }
+  button {
+    font-size: 1.3rem;
+    height: 2.5rem;
+    background-color: coral;
   }
 }
 @media screen and (max-width: 426px) {
-  .containerItem {
-    width: 90vw;
+  .formContainer {
+    width: 97vw;
+    /* margin-bottom: 10vh; */
+    box-shadow: 10px 10px 10px black;
+  }
+  .inputForm {
+    background-color: rgb(173, 173, 173);
+    height: 2rem;
+    width: 70vw;
+    color: white;
+    padding-left: 0.8rem;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px black;
+  }
+  button {
+    font-size: 1.3rem;
+    height: 2.5rem;
+    background-color: coral;
   }
 }
 @media screen and (max-width: 769px) {
