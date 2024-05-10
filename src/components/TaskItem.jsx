@@ -37,3 +37,4 @@ const TaskItem = ({ tarea, onCompleted, onDeleteItem }) => {
     </div>
   );
 };
+export default TaskItem;
